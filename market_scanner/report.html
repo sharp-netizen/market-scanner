@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Scanner Report - March 28, 2026</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #fff;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        h1 { 
+            text-align: center; 
+            margin-bottom: 10px;
+            font-size: 2.5em;
+            background: linear-gradient(90deg, #00d4ff, #7b2ff7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .timestamp { 
+            text-align: center; 
+            color: #888; 
+            margin-bottom: 30px;
+        }
+        .summary { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .card {
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            padding: 20px;
+            backdrop-filter: blur(10px);
+        }
+        .card h3 { color: #00d4ff; margin-bottom: 10px; }
+        .card .value { font-size: 2em; font-weight: bold; }
+        .card .sub { color: #888; font-size: 0.9em; }
+        .positive { color: #00ff88; }
+        .negative { color: #ff4757; }
+        
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            background: rgba(255,255,255,0.05);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        th, td { padding: 15px; text-align: left; }
+        th { background: rgba(0,212,255,0.2); color: #00d4ff; }
+        tr:nth-child(even) { background: rgba(255,255,255,0.02); }
+        tr:hover { background: rgba(255,255,255,0.1); }
+        
+        .price { font-weight: bold; font-size: 1.1em; }
+        .change-positive { color: #00ff88; }
+        .change-negative { color: #ff4757; }
+        
+        .movers { margin-top: 30px; }
+        .movers h2 { margin-bottom: 15px; color: #00d4ff; }
+        .mover-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; }
+        .mover-card {
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .mover-card .symbol { font-weight: bold; font-size: 1.2em; }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 1.8em; }
+            th, td { padding: 10px; font-size: 0.9em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Market Scanner Report</h1>
+        <p class="timestamp">Generated: March 28, 2026 at 3:47 AM PST</p>
+        
+        <div class="summary">
+            <div class="card">
+                <h3>Market Status</h3>
+                <div class="value" style="color: #ff4757;">▾ Down</div>
+                <div class="sub">All major indices negative</div>
+            </div>
+            <div class="card">
+                <h3>Active Tickers</h3>
+                <div class="value">10</div>
+                <div class="sub">AAPL, TSLA, NVDA, AMD, MSFT, GOOGL, AMZN, SPY, CRWV, ORCL</div>
+            </div>
+            <div class="card">
+                <h3>Worst Performer</h3>
+                <div class="value negative">-7.01%</div>
+                <div class="sub">CRWV (Coreweave)</div>
+            </div>
+            <div class="card">
+                <h3>Best Performer</h3>
+                <div class="value negative">-0.87%</div>
+                <div class="sub">AMD (least negative)</div>
+            </div>
+        </div>
+        
+        <h2 style="color: #00d4ff; margin-bottom: 15px;">📈 Detailed Quotes</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Symbol</th>
+                    <th>Price</th>
+                    <th>Change</th>
+                    <th>Change %</th>
+                    <th>Volume</th>
+                    <th>Market Cap</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="price">AAPL</td>
+                    <td>$248.80</td>
+                    <td class="change-negative">-$4.09</td>
+                    <td class="change-negative">-1.62%</td>
+                    <td>46.5M</td>
+                    <td>3.66T</td>
+                </tr>
+                <tr>
+                    <td class="price">TSLA</td>
+                    <td>$361.83</td>
+                    <td class="change-negative">-$10.28</td>
+                    <td class="change-negative">-2.76%</td>
+                    <td>60.6M</td>
+                    <td>1.36T</td>
+                </tr>
+                <tr>
+                    <td class="price">NVDA</td>
+                    <td>$167.52</td>
+                    <td class="change-negative">-$3.72</td>
+                    <td class="change-negative">-2.17%</td>
+                    <td>194M</td>
+                    <td>4.07T</td>
+                </tr>
+                <tr>
+                    <td class="price">AMD</td>
+                    <td>$201.99</td>
+                    <td class="change-negative">-$1.78</td>
+                    <td class="change-negative">-0.87%</td>
+                    <td>27.8M</td>
+                    <td>329B</td>
+                </tr>
+                <tr>
+                    <td class="price">MSFT</td>
+                    <td>$356.77</td>
+                    <td class="change-negative">-$9.20</td>
+                    <td class="change-negative">-2.51%</td>
+                    <td>37.7M</td>
+                    <td>2.65T</td>
+                </tr>
+                <tr>
+                    <td class="price">GOOGL</td>
+                    <td>$274.34</td>
+                    <td class="change-negative">-$6.63</td>
+                    <td class="change-negative">-2.36%</td>
+                    <td>35.5M</td>
+                    <td>3.32T</td>
+                </tr>
+                <tr>
+                    <td class="price">AMZN</td>
+                    <td>$199.34</td>
+                    <td class="change-negative">-$8.34</td>
+                    <td class="change-negative">-4.02%</td>
+                    <td>55.8M</td>
+                    <td>2.14T</td>
+                </tr>
+                <tr>
+                    <td class="price">SPY</td>
+                    <td>$634.09</td>
+                    <td class="change-negative">-$11.00</td>
+                    <td class="change-negative">-1.71%</td>
+                    <td>92.8M</td>
+                    <td>582B</td>
+                </tr>
+                <tr>
+                    <td class="price">CRWV</td>
+                    <td>$74.81</td>
+                    <td class="change-negative">-$5.64</td>
+                    <td class="change-negative">-7.01%</td>
+                    <td>22.1M</td>
+                    <td>39.3B</td>
+                </tr>
+                <tr>
+                    <td class="price">ORCL</td>
+                    <td>$139.66</td>
+                    <td class="change-negative">-$3.15</td>
+                    <td class="change-negative">-2.21%</td>
+                    <td>17.8M</td>
+                    <td>402B</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="movers">
+            <h2>🚀 Top Movers</h2>
+            <div class="mover-grid">
+                <div class="mover-card">
+                    <span class="symbol">📉 CRWV</span>
+                    <span class="change-negative">-7.01%</span>
+                </div>
+                <div class="mover-card">
+                    <span class="symbol">📉 AMZN</span>
+                    <span class="change-negative">-4.02%</span>
+                </div>
+                <div class="mover-card">
+                    <span class="symbol">📉 TSLA</span>
+                    <span class="change-negative">-2.76%</span>
+                </div>
+                <div class="mover-card">
+                    <span class="symbol">📉 MSFT</span>
+                    <span class="change-negative">-2.51%</span>
+                </div>
+            </div>
+        </div>
+        
+        <p style="text-align: center; margin-top: 40px; color: #666;">
+            Data provided by Yahoo Finance • Market Scanner v1.0
+        </p>
+    </div>
+</body>
+</html>

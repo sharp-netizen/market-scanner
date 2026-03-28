@@ -1,0 +1,164 @@
+# Market Scanner Configuration
+
+# Provider mode: "single" or "aggregator"
+mode: "single"  # "single" for one provider, "aggregator" for multiple
+
+# Provider: "alpaca" (RECOMMENDED - FREE real-time stocks), "coinbase", "binance", "mock"
+provider: "alpaca"
+
+# Stock tickers for Alpaca
+tickers:
+  - "AAPL"     # Apple
+  - "TSLA"     # Tesla
+  - "NVDA"     # NVIDIA
+  - "AMD"       # AMD
+  - "MSFT"     # Microsoft
+  - "GOOGL"    # Google
+  - "AMZN"     # Amazon
+  - "SPY"      # S&P 500 ETF
+  - "CRWV"      # Coreweave (AI/Cloud)
+  - "ORCL"     # Oracle
+  - "GLD"      # Gold ETF
+  - "SLV"      # Silver ETF
+
+# Aggregator mode (multiple providers simultaneously)
+aggregator:
+  providers:
+    - type: "coinbase"
+      tickers:
+        - "BTC"
+        - "ETH"
+        - "SOL"
+    - type: "mock"
+      tickers:
+        - "AAPL"
+        - "TSLA"
+        - "NVDA"
+
+# ============================================================
+# OPTIONS DATA SOURCES (Choose ONE or BOTH)
+# ============================================================
+
+# Yahoo Finance Options (FREE, delayed 15min)
+yahoo_options:
+  enabled: false  # Set to true to enable
+  tickers:
+    - "AAPL"
+    - "TSLA"
+    - "NVDA"
+    - "SPY"
+    - "AMD"
+  poll_interval: 60  # Seconds between fetches
+
+# QuiverQuant Options ($10/mo - Unusual activity)
+quiverquant:
+  enabled: false  # Set to true to enable
+  api_key: ""  # Get from https://api.quiverquant.com
+  tickers:
+    - "AAPL"
+    - "TSLA"
+    - "SPY"
+    - "NVDA"
+    - "AMD"
+  patterns:
+    unusual_volume:
+      enabled: true
+      multiplier: 5.0
+      size_threshold: 100
+    sweep:
+      enabled: true
+      sweep_threshold: 500
+    whale:
+      enabled: true
+      premium_threshold: 100000
+    call_put_ratio:
+      enabled: true
+      call_threshold: 2.0
+      put_threshold: 2.0
+
+# ============================================================
+# TRADING DATA SOURCES
+# ============================================================
+
+# Coinbase settings (when provider: coinbase)
+coinbase:
+  # No API key needed for public data
+
+# Binance settings (when provider: binance)
+binance:
+  api_key: ""  # Optional for public data
+
+# Alpaca settings (RECOMMENDED - FREE real-time stock data!)
+# Get free API keys at https://alpaca.markets/ (paper trading keys work)
+alpaca:
+  api_key: "PKQSPTIW5PAUAFF3SNKMABAXDC"
+  secret_key: "3iZLhRQumnaJfVKxa8mzLTjdotPxwcwsFJ63Gft4UssS"
+  paper: true  # Use paper API (free tier, works for market data)
+
+# Polygon settings (when provider: polygon)
+polygon:
+  api_key: ""  # Optional: pRM5FfKt2cMGWpyNYQ7_jFsf_TXG64OK
+  ws_url: "wss://socket.polygon.io/stocks"
+
+# ============================================================
+# MULTI-TIMEFRAME ANALYSIS SETTINGS
+# ============================================================
+
+multi_timeframe:
+  enabled: true
+  
+  # Timeframes to analyze
+  timeframes:
+    - "1min"
+    - "5min"
+    - "15min"
+    - "1hr"
+    - "4hr"
+  
+  patterns:
+    # Multi-timeframe alignment detection
+    alignment:
+      enabled: true
+      threshold: 60  # % of timeframes aligned to trigger alert
+    
+    # Smart money accumulation/distribution
+    smart_money:
+      enabled: true
+      volume_surge_threshold: 3.0  # 3x average volume
+      min_price_change: 0.2  # Minimum % price change
+    
+    # Higher timeframe trend detection
+    trend:
+      enabled: true
+      threshold: 0.5  # % change to trigger trend alert
+
+# ============================================================
+# DATA ENGINE SETTINGS
+# ============================================================
+
+data_engine:
+  window_size: 100
+  max_tickers: 100
+
+# ============================================================
+# OUTPUT SETTINGS
+# ============================================================
+
+output:
+  console:
+    enabled: true
+    rich_dashboard: false
+  log_file:
+    enabled: true
+    path: "logs/scanner.log"
+  mock_executor:
+    enabled: true
+  telegram:
+    enabled: true
+    token: "8503878440:AAEa2RlNR4Q-Q1oW-IXRHm-9J0BJT3LfyoU"
+    chat_id: "6975285448"
+    parse_mode: "HTML"
+  discord:
+    enabled: false
+    webhook_url: "YOUR_DISCORD_WEBHOOK_URL"
+    username: "Market Scanner"

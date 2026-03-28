@@ -1,0 +1,6 @@
+/Users/clawdbotagent/workspace/market_scanner/main_async.py:374: RuntimeWarning: coroutine 'AlpacaProvider.disconnect' was never awaited
+  pass
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+/Users/clawdbotagent/workspace/market_scanner/main_async.py:374: RuntimeWarning: coroutine 'AlpacaProvider.disconnect' was never awaited
+  pass
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback

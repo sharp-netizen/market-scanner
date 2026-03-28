@@ -1,0 +1,334 @@
+[2026-02-10 06:30:01] Starting market scanner...
+[2026-02-10 06:30:01] Market scanner started
+Traceback (most recent call last):
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 103, in <module>
+    stop()
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 53, in stop
+    if not is_running():
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 83, in is_running
+    pid = int(f.read().strip())
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 101, in <module>
+    start()
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 28, in start
+    if is_running():
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 83, in is_running
+    pid = int(f.read().strip())
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 103, in <module>
+    stop()
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 53, in stop
+    if not is_running():
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 83, in is_running
+    pid = int(f.read().strip())
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 101, in <module>
+    start()
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 28, in start
+    if is_running():
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 83, in is_running
+    pid = int(f.read().strip())
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 103, in <module>
+    stop()
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 53, in stop
+    if not is_running():
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 83, in is_running
+    pid = int(f.read().strip())
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 101, in <module>
+    start()
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 28, in start
+    if is_running():
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 83, in is_running
+    pid = int(f.read().strip())
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 103, in <module>
+    stop()
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 53, in stop
+    if not is_running():
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 83, in is_running
+    pid = int(f.read().strip())
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 101, in <module>
+    start()
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 28, in start
+    if is_running():
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 83, in is_running
+    pid = int(f.read().strip())
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 103, in <module>
+    stop()
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 53, in stop
+    if not is_running():
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 83, in is_running
+    pid = int(f.read().strip())
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 101, in <module>
+    start()
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 28, in start
+    if is_running():
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 83, in is_running
+    pid = int(f.read().strip())
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 103, in <module>
+    stop()
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 53, in stop
+    if not is_running():
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 83, in is_running
+    pid = int(f.read().strip())
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 101, in <module>
+    start()
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 28, in start
+    if is_running():
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 83, in is_running
+    pid = int(f.read().strip())
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 103, in <module>
+    stop()
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 53, in stop
+    if not is_running():
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 83, in is_running
+    pid = int(f.read().strip())
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 101, in <module>
+    start()
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 28, in start
+    if is_running():
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 83, in is_running
+    pid = int(f.read().strip())
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 103, in <module>
+    stop()
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 53, in stop
+    if not is_running():
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 83, in is_running
+    pid = int(f.read().strip())
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 101, in <module>
+    start()
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 28, in start
+    if is_running():
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 83, in is_running
+    pid = int(f.read().strip())
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 103, in <module>
+    stop()
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 53, in stop
+    if not is_running():
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 83, in is_running
+    pid = int(f.read().strip())
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 101, in <module>
+    start()
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 28, in start
+    if is_running():
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 83, in is_running
+    pid = int(f.read().strip())
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 103, in <module>
+    stop()
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 53, in stop
+    if not is_running():
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 83, in is_running
+    pid = int(f.read().strip())
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 101, in <module>
+    start()
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 28, in start
+    if is_running():
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 83, in is_running
+    pid = int(f.read().strip())
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 103, in <module>
+    stop()
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 53, in stop
+    if not is_running():
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 83, in is_running
+    pid = int(f.read().strip())
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 101, in <module>
+    start()
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 28, in start
+    if is_running():
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 83, in is_running
+    pid = int(f.read().strip())
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 103, in <module>
+    stop()
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 53, in stop
+    if not is_running():
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 83, in is_running
+    pid = int(f.read().strip())
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 101, in <module>
+    start()
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 28, in start
+    if is_running():
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 83, in is_running
+    pid = int(f.read().strip())
+ValueError: invalid literal for int() with base 10: ''
+[2026-02-27 13:00:00] Stopping market scanner...
+[2026-02-27 13:00:00] Stopped process 57452
+[2026-03-02 06:30:01] Starting market scanner...
+[2026-03-02 06:30:01] Market scanner started
+Traceback (most recent call last):
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 103, in <module>
+    stop()
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 53, in stop
+    if not is_running():
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 83, in is_running
+    pid = int(f.read().strip())
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 101, in <module>
+    start()
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 28, in start
+    if is_running():
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 83, in is_running
+    pid = int(f.read().strip())
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 103, in <module>
+    stop()
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 53, in stop
+    if not is_running():
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 83, in is_running
+    pid = int(f.read().strip())
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 101, in <module>
+    start()
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 28, in start
+    if is_running():
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 83, in is_running
+    pid = int(f.read().strip())
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 103, in <module>
+    stop()
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 53, in stop
+    if not is_running():
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 83, in is_running
+    pid = int(f.read().strip())
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 101, in <module>
+    start()
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 28, in start
+    if is_running():
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 83, in is_running
+    pid = int(f.read().strip())
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 103, in <module>
+    stop()
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 53, in stop
+    if not is_running():
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 83, in is_running
+    pid = int(f.read().strip())
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 101, in <module>
+    start()
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 28, in start
+    if is_running():
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 83, in is_running
+    pid = int(f.read().strip())
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 103, in <module>
+    stop()
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 53, in stop
+    if not is_running():
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 83, in is_running
+    pid = int(f.read().strip())
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 101, in <module>
+    start()
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 28, in start
+    if is_running():
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 83, in is_running
+    pid = int(f.read().strip())
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 103, in <module>
+    stop()
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 53, in stop
+    if not is_running():
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 83, in is_running
+    pid = int(f.read().strip())
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 101, in <module>
+    start()
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 28, in start
+    if is_running():
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 83, in is_running
+    pid = int(f.read().strip())
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 103, in <module>
+    stop()
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 53, in stop
+    if not is_running():
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 83, in is_running
+    pid = int(f.read().strip())
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 101, in <module>
+    start()
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 28, in start
+    if is_running():
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 83, in is_running
+    pid = int(f.read().strip())
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 103, in <module>
+    stop()
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 53, in stop
+    if not is_running():
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 83, in is_running
+    pid = int(f.read().strip())
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 101, in <module>
+    start()
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 28, in start
+    if is_running():
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 83, in is_running
+    pid = int(f.read().strip())
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 103, in <module>
+    stop()
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 53, in stop
+    if not is_running():
+  File "/Users/clawdbotagent/workspace/market_scanner/scheduler.py", line 83, in is_running
+    pid = int(f.read().strip())
+ValueError: invalid literal for int() with base 10: ''
