@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Downloader</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      width: 320px;
+      min-height: 200px;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      color: #fff;
+      padding: 16px;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .header h1 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #ff0000;
+    }
+
+    .status {
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      font-size: 13px;
+      display: none;
+    }
+
+    .status.success {
+      background: rgba(76, 175, 80, 0.2);
+      border: 1px solid rgba(76, 175, 80, 0.3);
+      color: #4caf50;
+      display: block;
+    }
+
+    .status.error {
+      background: rgba(244, 67, 54, 0.2);
+      border: 1px solid rgba(244, 67, 54, 0.3);
+      color: #f44336;
+      display: block;
+    }
+
+    .status.info {
+      background: rgba(33, 150, 243, 0.2);
+      border: 1px solid rgba(33, 150, 243, 0.3);
+      color: #2196f3;
+      display: block;
+    }
+
+    .video-info {
+      background: rgba(255,255,255,0.05);
+      border-radius: 8px;
+      padding: 12px;
+      margin-bottom: 12px;
+    }
+
+    .video-title {
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 8px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .video-url {
+      font-size: 11px;
+      color: rgba(255,255,255,0.5);
+      word-break: break-all;
+    }
+
+    .quality-options {
+      margin-bottom: 12px;
+    }
+
+    .quality-options label {
+      display: block;
+      font-size: 12px;
+      margin-bottom: 6px;
+      color: rgba(255,255,255,0.7);
+    }
+
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 6px;
+      background: rgba(255,255,255,0.1);
+      color: #fff;
+      font-size: 13px;
+      cursor: pointer;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    select:hover {
+      border-color: rgba(255,255,255,0.4);
+    }
+
+    select:focus {
+      border-color: #ff0000;
+    }
+
+    select option {
+      background: #1a1a2e;
+      color: #fff;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+      margin-bottom: 8px;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #ff3333 0%, #ff0000 100%);
+      transform: translateY(-1px);
+    }
+
+    .btn-primary:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .btn-secondary {
+      background: rgba(255,255,255,0.1);
+      color: #fff;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255,255,255,0.2);
+    }
+
+    .progress-container {
+      margin-top: 12px;
+      display: none;
+    }
+
+    .progress-container.active {
+      display: block;
+    }
+
+    .progress-bar {
+      height: 6px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #ff0000 0%, #ff6b6b 100%);
+      width: 0%;
+      transition: width 0.3s;
+    }
+
+    .progress-text {
+      font-size: 12px;
+      color: rgba(255,255,255,0.7);
+      margin-top: 6px;
+      text-align: center;
+    }
+
+    .not-youtube {
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .not-youtube p {
+      font-size: 13px;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 12px;
+    }
+
+    .warning {
+      font-size: 11px;
+      color: rgba(255,255,255,0.4);
+      text-align: center;
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>📥 YouTube Downloader</h1>
+  </div>
+
+  <div id="notYoutube" class="not-youtube" style="display: none;">
+    <p>⚠️ Not a YouTube page</p>
+    <p style="font-size: 11px; color: rgba(255,255,255,0.5);">Navigate to a YouTube video to download</p>
+  </div>
+
+  <div id="videoInfo" class="video-info" style="display: none;">
+    <div class="video-title" id="videoTitle">Loading...</div>
+    <div class="video-url" id="videoUrl"></div>
+  </div>
+
+  <div id="qualityOptions" class="quality-options" style="display: none;">
+    <label for="quality">Select Quality:</label>
+    <select id="quality">
+      <option value="best">Best Quality</option>
+      <option value="1080p">1080p HD</option>
+      <option value="720p">720p HD</option>
+      <option value="480p">480p</option>
+      <option value="360p">360p</option>
+      <option value="audio">Audio Only (MP3)</option>
+    </select>
+  </div>
+
+  <button id="downloadBtn" class="btn btn-primary" disabled>
+    Download Video
+  </button>
+
+  <div id="progressContainer" class="progress-container">
+    <div class="progress-bar">
+      <div id="progressFill" class="progress-fill"></div>
+    </div>
+    <div id="progressText" class="progress-text">Preparing download...</div>
+  </div>
+
+  <div id="status" class="status"></div>
+
+  <button id="refreshBtn" class="btn btn-secondary" style="display: none;">
+    Refresh
+  </button>
+
+  <div class="warning">
+    For educational/personal use only
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
